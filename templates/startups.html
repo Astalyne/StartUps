@@ -1,0 +1,13 @@
+<html>
+<h1>Start up list</h1>
+<br>
+
+{% for startup in startups %}
+
+    <a href="{{ url_for('show_startup', startup_id=startup.id) }}">{{ startup.name }}</a>
+    <br>
+    <br>
+
+{% endfor %}
+
+</html>
